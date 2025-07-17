@@ -6,3 +6,12 @@ export default defineConfig({
   plugins: [react()],
   
 })
+
+export default {
+  css: {
+    modules: {
+      scopeBehaviour: 'local',
+    }
+  }
+}
+
