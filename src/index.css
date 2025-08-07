@@ -13,9 +13,10 @@ html {
 }
 
 :root {
-    --primary: #6C4DF6;
-    --secondary: #FF7E33;
-    --accent: #00E0C7;
+    --primary: #007BFF;
+    --secondary: #0055CC;
+   --accent: #FF6600;
+     --secondaryAccent: #E65C00;
     --dark: #1A1A2E;
     --light: #F5F5FF;
 }

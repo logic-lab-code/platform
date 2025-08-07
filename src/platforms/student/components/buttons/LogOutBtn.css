@@ -1,13 +1,25 @@
+:root{
+     --primary: #007BFF;
+    --secondary: #0055CC;
+    --accent: #FF6600;
+     --secondaryAccent: #E65C00;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --bg-light: #f9fafb;
+}
+
+
+
 .magic-button {
   display: inline-block;
   padding: 12px 28px;
   border-radius: 10px;
-  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  background: linear-gradient(135deg, #007BFF,#0055CC);
   color: #fff;
   font-size: 1.5rem;
   font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 8px 20px rgba(72, 0, 204, 0.4);
+  box-shadow: 0 8px 20px #FF6600;
   transition: all 0.3s ease-in-out;
   position: relative;
   overflow: hidden;
@@ -33,5 +45,5 @@
 
 .magic-button:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(72, 0, 204, 0.6);
+  box-shadow: 0 10px 30px #FF6600;
 }

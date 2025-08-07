@@ -1,14 +1,17 @@
 /* Student Profile Card - Modern Design */
-.student-profile-card {
-    --primary-color: #4f46e5;
-    --secondary-color: #7c3aed;
-    --accent-color: #ec4899;
+:root{
+     --primary: #007BFF;
+    --secondary: #0055CC;
+    --accent: #FF6600;
+     --secondaryAccent: #E65C00;
     --text-dark: #1f2937;
     --text-light: #6b7280;
     --bg-light: #f9fafb;
+}
+
+
+.student-profile-card {
     max-width: 100%;
-    background: white;
-    /* border-radius: 20px; */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     font-family: 'Inter', sans-serif;
@@ -16,7 +19,7 @@
     border: 1px solid rgba(0, 0, 0, 0.05);
     display: flex;
     justify-content: space-between;
-
+ background: linear-gradient(135deg, var(--bg-light) 0%, white 100%);
 }
 
 .student-profile-card:hover {
@@ -29,7 +32,7 @@
     padding: 2rem;
     gap: 2rem;
     align-items: center;
-    background: linear-gradient(135deg, var(--bg-light) 0%, white 100%);
+   
 }
 
 .student-profile-pic {
@@ -37,7 +40,7 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
+    background: linear-gradient(135deg, #3ec2ff, #c7f3fe);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,12 +51,12 @@
 
 .student-profile-pic:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.3);
+    box-shadow: 0 8px 25px rgba(70, 157, 229, 0.3);
 }
 
 .student-profile-icon {
     font-size: 4rem;
-    color: var(--primary-color);
+    color: var(--primary);
 }
 
 .student-upload-indicator {
@@ -62,7 +65,7 @@
     right: 10px;
     width: 36px;
     height: 36px;
-    background: var(--accent-color);
+    background: var(--accent);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -83,7 +86,7 @@
     width: 100%;
     text-align: center;
     font-size: 0.9rem;
-    color: var(--text-light);
+    color: var(--accent);
     font-weight: 500;
     opacity: 0;
     transition: all 0.3s ease;
@@ -100,8 +103,7 @@
 
 .student-profile-name {
     font-size: 2rem;
- /* margin-left: -6rem; */
-    color: var(--text-dark);
+    color: var(--accent);
     font-weight: 700;
     letter-spacing: -0.5px;
 }
@@ -109,16 +111,16 @@
 .student-profile-grade {
     font-size: 1.1rem;
     margin: 0 0 1rem;
-    color: var(--primary-color);
+    color: var(--secondary);
     font-weight: 600;
     display: inline-block;
     padding: 0.25rem 0.75rem;
-    background: rgba(79, 70, 229, 0.1);
+    background: rgba(236, 109, 24, 0.1);
     border-radius: 5px;
 }
 
 .student-profile-bio {
-    color: var(--text-light);
+    color: var(--secondaryAccent);
     margin: 0 0 1.5rem;
     line-height: 1.6;
     max-width: 500px;
@@ -146,12 +148,12 @@
 
 .student-stat-item:hover {
     background: rgba(79, 70, 229, 0.1);
-    color: var(--primary-color);
+    color: var(--primary);
     transform: translateY(-2px);
 }
 
 .stat-icon {
-    color: var(--primary-color);
+    color: var(--primary);
     font-size: 1.5rem;
     margin-top: 0.3rem;
 }
@@ -159,7 +161,7 @@
 .student-courses-profile {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     padding: 1.5rem;
     gap: 1rem;
 }
@@ -175,7 +177,7 @@
 }
 
 .student-course-item:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--secondaryAccent);
     transform: translateY(-5px);
 }
 

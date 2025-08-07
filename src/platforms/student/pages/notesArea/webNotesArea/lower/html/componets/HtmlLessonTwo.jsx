@@ -81,10 +81,11 @@ function HtmlLessonTwo() {
             </div>
             </div>            
           </section>
+
         </article>
          {/* <!-- Navigation Links --> */}
           <div class="practice-room-btn">
-            <Link to="/lesson3" class="nav-btn">
+            <Link to="/webcodingpage" class="nav-btn">
               Go To Practise <i class="fas fa-arrow-right"></i>
             </Link>
           </div>

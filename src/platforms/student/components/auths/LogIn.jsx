@@ -154,7 +154,7 @@ function LogIn() {
           </div>
           <button 
             type="submit" 
-            className="btn btn-success w-100 rounded-0"
+            className="login-btn"
             disabled={loading || !validateUsername(userName) || password.length < 4}
           >
             {loading ? "Logging in..." : "Login"}

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FiLogOut, FiHome, FiBook, FiChevronDown } from "react-icons/fi";
 
-import styles from './Sidebar.module.css';
+import styles from './SideBar.module.css';
 
 const Sidebar = () => {
   const location = useLocation();

@@ -9,7 +9,7 @@ import WebCoding from "./pages/WebCoding";
 import ExamRoom from "./components/ExamRoom";
 import WebTopics from "./components/WebTopics";
 import StudentLogInPage from "./platforms/student/pages/LogInPage";
-import StudentDashBoard from "./platforms/student/pages/StudentDashBoard";
+import StudentDashBoard from "./platforms/student/pages/Page";
 import Scratch from "./platforms/student/pages/notesArea/scrathNotesArea/lowerClass/Scratch";
 import HTML from "./platforms/student/pages/notesArea/webNotesArea/lower/html/HTML";
 

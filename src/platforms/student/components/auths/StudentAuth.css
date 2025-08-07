@@ -1,5 +1,13 @@
+:root {
+    --primary: #007BFF;
+    --secondary: #0055CC;
+    --accent: #FF6600;
+    --secondaryAccent: #E65C00;
+    --dark: #1A1A2E;
+    --light: #F5F5FF;
+}
+ 
  .student-login-container {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -16,7 +24,7 @@
     left: 0;
     width: 100%;
     height: 10px;
-    background: linear-gradient(90deg, #ff9a9e 0%, #fad0c4 50%, #a18cd1 100%);
+    background: linear-gradient(90deg, #ff6600 0%, #fad0c4 50%, #0055cc 100%);
   }
 
   .login-form {
@@ -47,13 +55,9 @@
     }
   }
 
-  .login-form h2 {
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  }
 
   .login-form .subtitle {
-    color: #7e8cbb;
+    color: var(--secondaryAccent) ;
     margin-bottom: 30px;
     font-size: 20px;
   }
@@ -67,44 +71,47 @@
   .form-group label {
     display: block;
     margin-bottom: 8px;
-    color: #4a6baf;
+    color: var(--accent);
     font-size: 25px;
   }
 
 .form-group input {
     width: 100%;
     height: 70px;
-    border: 4px solid #e0e4f0; /* Thicker border */
-    border-radius: 20px; /* Slightly larger radius */
+    border: 4px solid #e0e4f0; 
+    border-radius: 20px; 
     font-size: 220px;
-    font-weight: 800; /* Extra bold text */
+    font-weight: 800; 
     color: #4a6baf;
     transition: all 0.3s;
     outline: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
   .form-group input:focus {
-    border-color: #a18cd1;
+    border-color: var(--primary);
     box-shadow: 0 0 0 4px rgba(161, 140, 209, 0.2);
   }
 
   .form-group input::placeholder {
-    color: #b8c1dd;
+    color: var(--secondaryAccent);
+    opacity: 50%;
   }
 
   .input-hint {
     font-size: 14px;
-    color: #7e8cbb;
+    color:  var(--secondary);
     margin-top: 8px;
   }
 
-  .btn-success {
+  .login-btn {
     background: linear-gradient(45deg, #ff9a9e, #fad0c4);
     color: white;
     border: none;
+    width: 400px;
+    height: 70px;
     padding: 18px;
     border-radius: 15px !important;
-    font-size: 20px;
+    font-size: 5rem;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s;
@@ -138,7 +145,7 @@
   }
 
   .btn-default {
-    background: linear-gradient(45deg, #a18cd1, #fbc2eb);
+    background: linear-gradient(45deg, #007BFF, #FF6600);
     color: white !important;
     padding: 12px;
     font-weight: bold;
@@ -165,4 +172,8 @@
     50% {
       transform: translateY(-100px) rotate(180deg);
     }
+  }
+
+  p{
+    color: var(--secondary);
   }
